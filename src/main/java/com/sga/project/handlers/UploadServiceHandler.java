@@ -21,7 +21,9 @@ public class UploadServiceHandler implements UploadService.Iface{
 
 	private static final File BASE_DIRECTORY = new File("downloads");
 	
-	 private Context context;
+	private Context context;
+	
+	
 	
 	@Override
 	public void upload(TransferInfo info) throws TException {
