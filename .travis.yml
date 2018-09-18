@@ -17,7 +17,7 @@ language: python # => 1
       - mysql -e 'create database test;' -u root
     script: # => 7
 <<<<<<< HEAD
-      - python manage.py runserver
+      - cd Upload-django-module && python manage.py runserver
 =======
       - python manage.py test
 >>>>>>> a616c45659440083b5dc5bfd91cb5cf9b54554cf
