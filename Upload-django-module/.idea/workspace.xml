@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b4fe076-c313-4cdd-99ea-2bbea2ba0ee6" name="Default Changelist" comment="" />
+    <list default="true" id="9b4fe076-c313-4cdd-99ea-2bbea2ba0ee6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDelete/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ToDelete/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/echo_thrift/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/echo_thrift/Templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/echo_thrift/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/echo_thrift/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +65,79 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="269507445">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="3" />
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="3" />
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="24" />
+          <entry key="py" value="127" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="24" />
+          <entry key="Python" value="127" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="2079204819">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Django Console" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="40" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ToDelete/wsgi.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echo_thrift/views.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="578">
+                <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+                <folding>
+                  <element signature="e#26#62#0" expanded="true" />
+                </folding>
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -81,48 +153,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/echo_thrift/views.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ToDelete/urls.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="204">
-                <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <first_editor relative-caret-position="357">
+                <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
                 <folding>
-                  <element signature="e#26#62#0" expanded="true" />
+                  <element signature="e#632#664#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/http.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/UploadService_thrift.thrift">
+        <entry file="file://$PROJECT_DIR$/echo_thrift/Templates/core/simple_upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" selection-start-line="6" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/echo_thrift/__init__.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor />
-              <second_editor />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/echo_thrift/Templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -142,18 +201,8 @@
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor relative-caret-position="68">
-                <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/echo_thrift/models.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -163,8 +212,8 @@
         <entry file="file://$PROJECT_DIR$/echo_thrift/urls.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <first_editor relative-caret-position="187">
+                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
                 <folding>
                   <element signature="e#1#29#0" expanded="true" />
                 </folding>
@@ -189,6 +238,9 @@
       <find>ech</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -205,8 +257,10 @@
         <option value="$PROJECT_DIR$/echo_thrift/Templates/index.html" />
         <option value="$PROJECT_DIR$/ToDelete/urls.py" />
         <option value="$PROJECT_DIR$/poll/urls.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/ToDelete/settings.py" />
         <option value="$PROJECT_DIR$/echo_thrift/urls.py" />
+        <option value="$PROJECT_DIR$/echo_thrift/Templates/core/simple_upload.html" />
         <option value="$PROJECT_DIR$/echo_thrift/views.py" />
       </list>
     </option>
@@ -217,12 +271,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="50" />
     <option name="y" value="-10" />
-    <option name="width" value="1548" />
+    <option name="width" value="1550" />
     <option name="height" value="700" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -232,22 +287,30 @@
         <subPane>
           <expand>
             <path>
-              <item name="ToDelete" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToDelete" type="462c0819:PsiDirectoryNode" />
+              <item name="Upload-django-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Upload-django-module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ToDelete" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToDelete" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToDelete" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToDelete" type="462c0819:PsiDirectoryNode" />
+              <item name="Upload-django-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Upload-django-module" type="462c0819:PsiDirectoryNode" />
               <item name="echo_thrift" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ToDelete" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToDelete" type="462c0819:PsiDirectoryNode" />
+              <item name="Upload-django-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Upload-django-module" type="462c0819:PsiDirectoryNode" />
+              <item name="echo_thrift" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Upload-django-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Upload-django-module" type="462c0819:PsiDirectoryNode" />
+              <item name="echo_thrift" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Upload-django-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Upload-django-module" type="462c0819:PsiDirectoryNode" />
               <item name="ToDelete" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -260,18 +323,20 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UploadService" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Science_Gateway\ToDelete\echo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Science_Gateway\Upload-django-module\echo_thrift\Templates" />
       <recent name="D:\Science_Gateway\ToDelete\templates" />
       <recent name="D:\Science_Gateway\ToDelete" />
       <recent name="D:\Science_Gateway\ToDelete\common" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Science_Gateway\ToDelete\echo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,30 +421,39 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49731544" visible="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5026846" side_tool="true" visible="true" weight="0.32956153" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48926175" weight="0.34087694" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49932885" visible="true" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,231 +476,34 @@
         <state>
           <first_editor>
             <caret column="1" selection-start-column="1" selection-end-column="1" />
-            <folding>
-              <element signature="e#22#31#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="17">
-            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/constants.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="238">
-            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            <folding>
-              <element signature="e#142#235#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/DownloadService.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/DownloadService-remote">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/ttypes.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="136">
-            <caret line="8" selection-start-line="8" selection-end-line="8" />
-            <folding>
-              <element signature="e#142#235#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/UploadService.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor>
-            <folding>
-              <element signature="e#142#235#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/UploadService-remote">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/EchoService.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-1377">
-            <folding>
-              <element signature="e#142#235#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/EchoService-remote">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/binary.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-3">
-            <folding>
-              <element signature="e#25#63#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/compact.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/exc.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/json.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/parser/exc.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/parser/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/_compat.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/hook.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/http.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/server.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/thrift.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/parser/lexer.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor>
-            <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-            <folding>
-              <element signature="e#25#63#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thriftpy/parser/parser.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="1463">
-            <caret line="548" column="28" lean-forward="true" selection-start-line="548" selection-start-column="28" selection-end-line="548" selection-end-column="28" />
-            <folding>
-              <element signature="e#82#120#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/common/constants.py" />
+    <entry file="file://$PROJECT_DIR$/common/DownloadService.py" />
+    <entry file="file://$PROJECT_DIR$/common/DownloadService-remote" />
+    <entry file="file://$PROJECT_DIR$/common/ttypes.py" />
+    <entry file="file://$PROJECT_DIR$/common/UploadService.py" />
+    <entry file="file://$PROJECT_DIR$/common/UploadService-remote" />
+    <entry file="file://$PROJECT_DIR$/common/EchoService.py" />
+    <entry file="file://$PROJECT_DIR$/common/EchoService-remote" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/binary.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/compact.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/exc.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/protocol/json.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/parser/exc.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/parser/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/_compat.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/hook.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/http.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/server.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/thrift.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/parser/lexer.py" />
+    <entry file="file://$PROJECT_DIR$/thriftpy/parser/parser.py" />
     <entry file="file://$PROJECT_DIR$/poll/__init__.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -682,24 +559,8 @@
         <state>
           <first_editor relative-caret-position="85">
             <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            <folding>
-              <element signature="e#0#35#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToDelete/urls.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="296">
-            <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-            <folding>
-              <element signature="e#632#664#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-61" />
         </state>
       </provider>
     </entry>
@@ -711,35 +572,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/echo_thrift/Templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToDelete/settings.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-1118">
-            <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/http.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="102">
-            <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/UploadService_thrift.thrift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="6" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -748,6 +594,80 @@
         <state>
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echo_thrift/models.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToDelete/settings.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="341">
+            <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToDelete/wsgi.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echo_thrift/views.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="578">
+            <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <folding>
+              <element signature="e#26#62#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToDelete/views.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToDelete/urls.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="357">
+            <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <folding>
+              <element signature="e#632#664#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echo_thrift/Templates/core/simple_upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -763,48 +683,17 @@
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="68">
-            <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/echo_thrift/models.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToDelete/wsgi.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToDelete/views.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/UploadService_thrift.thrift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="6" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/echo_thrift/urls.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <first_editor relative-caret-position="187">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             <folding>
               <element signature="e#1#29#0" expanded="true" />
             </folding>
@@ -813,16 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/echo_thrift/views.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="204">
-            <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-            <folding>
-              <element signature="e#26#62#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
+    <entry file="file://$PROJECT_DIR$/echo_thrift/Templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
