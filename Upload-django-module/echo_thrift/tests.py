@@ -1,27 +1,25 @@
 
 # Create your tests here.
 from django.test import TestCase
+import unittest
 
 class MyTests(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Set up data for the whole TestCase
-        cls.foo = Foo.objects.create(bar="Test")
-        ...
+        #cls.foo = Foo.objects.create(bar="Test")
+
 
     def test1(self):
         # Some test using self.foo
-        ...
+
 
     def test2(self):
         # Some other test using self.foo
 
-        ...
 
-    import unittest
-    from django.test
 
-    class SimpleTest(unittest.TestCase):
+  '''  class SimpleTest(unittest.TestCase):
         def test_details(self):
             client = Client()
             response = client.get('/customer/details/')
@@ -31,3 +29,4 @@ class MyTests(TestCase):
             client = Client()
             response = client.get('/customer/index/')
             self.assertEqual(response.status_code, 200)
+'''
