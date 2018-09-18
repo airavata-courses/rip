@@ -2,7 +2,11 @@ language: python # => 1
     python: # => 2
       - "2.6"
       - "2.7"
+<<<<<<< HEAD
 	  - "3.6"
+=======
+      -"3.6"
+>>>>>>> a616c45659440083b5dc5bfd91cb5cf9b54554cf
     services: # => 3
       - mysql
     env: # => 4
@@ -12,4 +16,8 @@ language: python # => 1
     before_script: # => 6
       - mysql -e 'create database test;' -u root
     script: # => 7
+<<<<<<< HEAD
       - python manage.py runserver
+=======
+      - python manage.py test
+>>>>>>> a616c45659440083b5dc5bfd91cb5cf9b54554cf
