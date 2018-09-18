@@ -1,23 +1,13 @@
-language: python # => 1
-    python: # => 2
-      - "2.6"
-      - "2.7"
-<<<<<<< HEAD
-	  - "3.6"
-=======
-      -"3.6"
->>>>>>> a616c45659440083b5dc5bfd91cb5cf9b54554cf
-    services: # => 3
-      - mysql
-    env: # => 4
-      -DJANGO=2.1 DB=mysql
-    install: # => 5
-      - pip install -r requirements.txt
-    before_script: # => 6
-      - mysql -e 'create database test;' -u root
-    script: # => 7
-<<<<<<< HEAD
-      - cd Upload-django-module && python manage.py runserver
-=======
-      - python manage.py test
->>>>>>> a616c45659440083b5dc5bfd91cb5cf9b54554cf
+language: python
+python:
+  - "3.6"    
+services:
+  - mysql
+env:
+  -DJANGO=2.1 DB=mysql
+install:
+  - cd Upload-django-module 
+  - pip install -r requirements.txt
+script:
+  - python manage.py migrate
+  - python manage.py test
