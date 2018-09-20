@@ -1,11 +1,11 @@
-package com.techprimers.kafka.springbootkafkaconsumerexample.listener;
+package com.kafka.extractor.listener;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.techprimers.kafka.springbootkafkaconsumerexample.document.Users;
-import com.techprimers.kafka.springbootkafkaconsumerexample.model.User;
-import com.techprimers.kafka.springbootkafkaconsumerexample.repository.DataRepository;
-import com.techprimers.kafka.springbootkafkaconsumerexample.test.test;
+import com.kafka.extractor.document.FilesMongoDB;
+//import com.kafka.extractor.model.User;
+import com.kafka.extractor.repository.DataRepository;
+
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -81,21 +81,14 @@ public class KafkaConsume{
     	
     	String fi = "D:\\downloads\\" + data[1];
     	System.out.println(fi);
-//    	return fi;
-    	
-//    	test t = new test(fi);
-//    	t.display(fi);
-        
-    	
+
     	
     	
     	String st;
     	String[] l = new String[50];
     	l[0] = "trmp";
-//    	test t = new test(fi);
-//    	t.display(fi);
+
     	
-//    	*************File Read Logic***********************
         File file = new File("D:\\downloads\\" + data[1]); 
         try {
         BufferedReader br = new BufferedReader(new FileReader(file)); 
@@ -111,79 +104,21 @@ public class KafkaConsume{
         System.out.println(l[1]);
         System.out.println(ty[1]);
         
-        Users u = new Users(1,data[1],l[1],ty[1]);
+        FilesMongoDB u = new FilesMongoDB(1,data[1],l[1],ty[1]);
         this.datarepository.deleteAll();
     	
-		List<Users> use = Arrays.asList(u);
+		List<FilesMongoDB> use = Arrays.asList(u);
 		this.datarepository.save(use);
-        System.out.println(st); 
+//        System.out.println(st); 
         }	
         catch(IOException e) {}
-        
-    	
-    	
-    	
-    	
-        
-        
-        
-        
-//        System.out.println(t);
-        
-        
-//        ***************************************************
-//        Collection<ConsumerRecord> messages = consumerRecord.getReceivedRecords();
-        
-//            try {
-//                context = new Context();
-//                context.raf = new RandomAccessFile(src, "r");
-//                
-//            } catch (FileNotFoundException e) {
-//                try {
-//                    context.raf.close();
-//                } catch (IOException e1) {
-//                    e1.printStackTrace();
-//                }
-//            }
-//        
-        
-//        try {
-//            buf = ioBuffer;
-//            ioBuffer.clear();
-//            long length = context.raf.getChannel().read(ioBuffer);
-//            ioBuffer.flip();
-//            
-//            ByteArrayInputStream bais = new ByteArrayInputStream(buf.array(), buf.position(), buf.limit());
-//            
-//        } catch (IOException e) {
-//            try {
-//                context.raf.close();
-//            } catch (IOException e1) {
-//                e1.printStackTrace();
-//            }
-//        }
-        System.out.println();
+      
     }
     
 
-//    @KafkaListener(topics = "Kafka_Example_json", group = "group_json",
-//            containerFactory = "userKafkaListenerFactory")
-//    public void consumeJson(User user) {
-//        System.out.println("Consumed JSON Message: " + user);
-//    }
-    
+
     private static class Context {
         private  RandomAccessFile raf;
     }
-
-
-//	@Override
-//	@KafkaListener(topics = "topic1")
-//	public void run(String... args) throws Exception {
-//		// TODO Auto-generated method stub
-////		System.out.println(st); 
-////		ConsumerRecord<?,?> check = consumeconsumerRecord;
-////		System.out.println(check.topic());
-//	}
 
 }

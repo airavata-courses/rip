@@ -1,10 +1,10 @@
-package com.techprimers.kafka.springbootkafkaconsumerexample.document;
+package com.kafka.extractor.document;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
-public class Users {
+public class FilesMongoDB {
 	
 	@Id
 	private Integer id;
@@ -14,7 +14,7 @@ public class Users {
 
 
 
-public Users (Integer id, String fileName,String data, String fileType) {
+public FilesMongoDB (Integer id, String fileName,String data, String fileType) {
 	
 	this.id = id;
 	this.fileName = fileName;
