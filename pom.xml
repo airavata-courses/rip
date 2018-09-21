@@ -11,6 +11,30 @@
 		<version>2.0.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
+<build>
+  <plugins>
+   <plugin>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-maven-plugin</artifactId>
+	</plugin>
+    <plugin>
+      <!-- Build an executable JAR -->
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.1.0</version>
+      <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>com.sga.project.UploadApiApp</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
   
   <dependencies>
   	<dependency>
@@ -64,5 +88,7 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+    
+    
   
 </project>
