@@ -24,7 +24,7 @@ public class UploadServiceHandler implements UploadService.Iface{
     private KafkaTemplate<String, String> senderHelper;
 
 	private static final File BASE_DIRECTORY = new File("downloads");
-	private static final File SHARED_DIRECTORY = new File("D:\\sharedDirectory");
+	private static final File SHARED_DIRECTORY = new File("C:\\sharedDirectory");
 	
 	private Context context;
 	
