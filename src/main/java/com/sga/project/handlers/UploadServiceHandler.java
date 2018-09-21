@@ -21,7 +21,7 @@ import com.sga.project.services.*;
 public class UploadServiceHandler implements UploadService.Iface{
 	
 	@Autowired
-    private KafkaTemplate<String, TransferInfo> senderHelper;
+    private KafkaTemplate<String, String> senderHelper;
 
 	private static final File BASE_DIRECTORY = new File("downloads");
 	private static final File SHARED_DIRECTORY = new File("D:\\sharedDirectory");
@@ -70,12 +70,13 @@ public class UploadServiceHandler implements UploadService.Iface{
 	
 	private void progressUpload(TransferInfo info) throws TException {
         try {
-        	senderHelper.send("topic1",info);
+        	
             context.raf.getChannel().write(info.data, context.raf.length());
             if (context.file.length() == context.length) {
                 context.raf.close();
                 String name = copyFileUsingStream(context);
                 System.out.println(name);
+                //senderHelper.send("topic1",name);
             }
         } catch (IOException e) {
             try {

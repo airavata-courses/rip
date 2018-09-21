@@ -18,7 +18,7 @@ import com.sga.project.transferables.TransferInfo;
 public class KakfaConfiguration {
 
     @Bean
-    public ProducerFactory<String, TransferInfo> producerFactory() {
+    public ProducerFactory<String, String> producerFactory() {
         Map<String, Object> config = new HashMap<>();
 
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
@@ -30,7 +30,7 @@ public class KakfaConfiguration {
 
 
     @Bean
-    public KafkaTemplate<String, TransferInfo> kafkaTemplate() {
+    public KafkaTemplate<String, String> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 
