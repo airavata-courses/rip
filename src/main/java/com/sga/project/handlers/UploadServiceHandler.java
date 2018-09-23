@@ -73,10 +73,10 @@ public class UploadServiceHandler implements UploadService.Iface{
         	
             context.raf.getChannel().write(info.data, context.raf.length());
             if (context.file.length() == context.length) {
+            	String name = copyFileUsingStream(context);
+    			System.out.println(name);
+    	        senderHelper.send("topic1",name);
                 context.raf.close();
-                String name = copyFileUsingStream(context);
-                System.out.println(name);
-                //senderHelper.send("topic1",name);
             }
         } catch (IOException e) {
             try {
