@@ -14,6 +14,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import com.sga.project.transferables.*;
+import com.sga.project.Configs.OSConfigs;
 import com.sga.project.services.*;
 
 
@@ -24,7 +25,7 @@ public class UploadServiceHandler implements UploadService.Iface{
     private KafkaTemplate<String, String> senderHelper;
 
 	private static final File BASE_DIRECTORY = new File("downloads");
-	private static final File SHARED_DIRECTORY = new File("C:\\sharedDirectory");
+	private static final File SHARED_DIRECTORY = new File(OSConfigs.sharedDirectoryPath);
 	
 	private Context context;
 	
@@ -90,9 +91,21 @@ public class UploadServiceHandler implements UploadService.Iface{
     }
 	
 	private String copyFileUsingStream(Context ctx) throws IOException {
-		File source = new File(BASE_DIRECTORY+"\\"+ctx.file.getName());
-        File dest = new File(SHARED_DIRECTORY+"\\"+ctx.file.getName());
-        
+		
+		File source;
+        File dest;
+		
+		if(OSConfigs.OSType.equalsIgnoreCase("Windows"))
+		{
+			source = new File(BASE_DIRECTORY+"\\"+ctx.file.getName());
+	        dest = new File(SHARED_DIRECTORY+"\\"+ctx.file.getName());
+		}
+		else
+		{
+			source = new File(BASE_DIRECTORY+"/"+ctx.file.getName());
+	        dest = new File(SHARED_DIRECTORY+"/"+ctx.file.getName());
+		}
+		
 	    InputStream is = null;
 	    OutputStream os = null;
 	    try {
@@ -110,6 +123,7 @@ public class UploadServiceHandler implements UploadService.Iface{
 	    
 	    return ctx.file.getName();
 	}
+	
 
 	private static class Context {
         private File file;
