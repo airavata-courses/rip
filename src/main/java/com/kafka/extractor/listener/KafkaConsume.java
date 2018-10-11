@@ -2,6 +2,7 @@ package com.kafka.extractor.listener;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.kafka.extractor.SpectraProcessor.SpectraProcessor;
 import com.kafka.extractor.document.FilesMongoDB;
 //import com.kafka.extractor.model.User;
 import com.kafka.extractor.repository.DataRepository;
@@ -42,14 +43,7 @@ public class KafkaConsume{
 	private static final File BASE_DIRECTORY = new File("downloads");
 	private ByteBuffer ioBuffer = ByteBuffer.allocate(1024 * 10);
 	private Context context;
-	
-	
-//    public void run(String... strings) throws Exception{
-//    	
-//		ConsumerRecord<?,?> cr = consumerRecord;
-//    	String record = consume(consumerRecord);
-//	}
-//	
+	private SpectraProcessor processor = new SpectraProcessor();
 	
 	public KafkaConsume(DataRepository datarepository) {
 		this.datarepository = datarepository;
@@ -62,26 +56,14 @@ public class KafkaConsume{
     	String[] msg = consumerRecord.toString().split(",",10);
     	String[] data = msg[8].toString().split("\"");
     	String[] ty = data[1].split("\\.");
-//    	System.out.println(msg);
     	System.out.println("*****file name*****"+ty[1]);
-    	
-//    	System.out.println(data[2]);
-//        System.out.println("Consumed message: " + data[3]);
-//        String[] d = data[3].toString().split(",");
-//        System.out.println(d[0]);
-//        byte[] bObj2 = d[0].getBytes();
-//        ByteBuffer buf = ByteBuffer.wrap(bObj2);
-//        System.out.println(Arrays.toString(bObj2));
-    	
-    	
-//        
-//        
-        
-//        File src = new File(BASE_DIRECTORY, "Blah.txt");
-    	
     	String fi = "D:\\downloads\\" + data[1];
     	System.out.println(fi);
-
+    	
+    	
+    	//added new code here
+    	String jsonVal = processor.processFile(fi);
+    	//end of new code
     	
     	
     	String st;
@@ -109,7 +91,6 @@ public class KafkaConsume{
     	
 		List<FilesMongoDB> use = Arrays.asList(u);
 		this.datarepository.save(use);
-//        System.out.println(st); 
         }	
         catch(IOException e) {}
       
