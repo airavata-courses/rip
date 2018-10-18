@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b4fe076-c313-4cdd-99ea-2bbea2ba0ee6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/echo_thrift/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/echo_thrift/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,20 +95,22 @@
     <session id="2079204819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Django Console" value="63" />
+          <entry key="Django Console" value="113" />
           <entry key="py" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="110" />
+          <entry key="Python" value="160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -129,13 +131,13 @@
         <entry file="file://$PROJECT_DIR$/echo_thrift/views.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="646">
+              <first_editor relative-caret-position="544">
                 <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
                 <folding>
                   <element signature="e#26#62#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor />
+              <second_editor relative-caret-position="-102" />
             </state>
           </provider>
         </entry>
@@ -144,7 +146,7 @@
         <entry file="file://$PROJECT_DIR$/echo_thrift/tests.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="367">
+              <first_editor relative-caret-position="412">
                 <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
                 <folding>
                   <element signature="e#761#819#0" expanded="true" />
@@ -208,8 +210,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="78" />
-    <option name="y" value="332" />
+    <option name="x" value="77" />
+    <option name="y" value="331" />
     <option name="width" value="1550" />
     <option name="height" value="700" />
   </component>
@@ -355,9 +357,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,9 +371,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26644295" side_tool="true" visible="true" weight="0.34087694" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.73355705" visible="true" weight="0.34087694" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49932885" weight="0.32956153" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22147651" side_tool="true" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7328859" weight="0.20509194" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.7785235" visible="true" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -559,9 +560,6 @@
         <state>
           <first_editor relative-caret-position="340">
             <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-            <folding>
-              <element signature="e#632#664#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor relative-caret-position="-17" />
         </state>
@@ -604,9 +602,6 @@
         <state>
           <first_editor relative-caret-position="170">
             <caret line="11" selection-start-line="11" selection-end-line="11" />
-            <folding>
-              <element signature="e#1#29#0" expanded="true" />
-            </folding>
           </first_editor>
           <second_editor relative-caret-position="-17" />
         </state>
@@ -615,20 +610,20 @@
     <entry file="file://$PROJECT_DIR$/echo_thrift/views.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="646">
+          <first_editor relative-caret-position="544">
             <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
             <folding>
               <element signature="e#26#62#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor />
+          <second_editor relative-caret-position="-102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/echo_thrift/tests.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="367">
+          <first_editor relative-caret-position="412">
             <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
             <folding>
               <element signature="e#761#819#0" expanded="true" />
