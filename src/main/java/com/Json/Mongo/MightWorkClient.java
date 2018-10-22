@@ -26,7 +26,7 @@ public class MightWorkClient {
 	    Scanner scan = new Scanner(System.in);
 	    int choice = 0;
 	    do {
-//	    	printMenu();
+//	    	printMenu(); Update it later
 	    	choice = scan.nextInt();
 	    	
 	    	switch(choice)
