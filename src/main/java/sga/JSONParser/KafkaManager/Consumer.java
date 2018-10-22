@@ -5,10 +5,15 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.thrift.TException;
+import org.apache.thrift.protocol.TBinaryProtocol;
+import org.apache.thrift.protocol.TProtocol;
+import org.apache.thrift.transport.THttpClient;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import sga.JSONParser.Services.InsertService;
 import sga.JSONParser.SpectraProcessor.SpectraProcessor;
 
 
@@ -30,12 +35,25 @@ public class Consumer {
     	System.out.println("*****file name*****"+filenameAndType[1]);
     	String fi = "C:\\sharedDirectory\\" + data[1];
     	
-    	String jsonVal = processor.processFile(fi);
-    	System.out.println(jsonVal);
+    	pushJSON(processor.processFile(fi));
 	}
 	
 	
 	private static class Context {
         private  RandomAccessFile raf;
     }
+	
+	private void pushJSON(String jsonMetaData)
+	{
+		THttpClient transport;
+		try {
+			transport = new THttpClient("http://localhost:8810/insertservice");
+			TProtocol protocol = new TBinaryProtocol(transport);
+		    InsertService.Client client = new InsertService.Client(protocol);
+		    client.InsertJSON(jsonMetaData);
+		} catch (TException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+	}
 }

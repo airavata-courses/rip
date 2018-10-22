@@ -14,7 +14,7 @@ public class GetJSONFileHandler implements GetJSONService.Iface {
 		
 		//request dbloader to send json object
 		
-		return null;
+		return "Some JSON String of "+ fileName;
 	}
 
 }
