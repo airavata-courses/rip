@@ -16,7 +16,8 @@ import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.THttpClient;
 import org.apache.thrift.transport.TTransportException;
 import com.sga.project.services.*;
-import com.sga.project.transferables.*;
+import com.sga.project.transferables.TransferInfo;
+import com.sga.project.transferables.TransferType;
 
 public class MightWorkClient {
 
@@ -72,11 +73,28 @@ public class MightWorkClient {
 	                    }
 	                }
 	    			break;
+	    		case 4:
+	    			List<String> files1 = getAvailableFileList();
+	    			for(String file: files1)
+	    				System.out.println(file);
+	    			break;
+	    		case 5:
+	    			THttpClient transport1 = new THttpClient("http://localhost:8888/getjsonfile");
+	    		    TProtocol protocol1 = new TBinaryProtocol(transport1);
+	    		    try {
+	    	            GetJSONService.Client client1 = new GetJSONService.Client(protocol1);
+	    	            String reply1 = client1.getJSONFile("R4B");
+	    	            System.out.println(reply1);;
+	    	        } catch (TException e) {
+	    	            e . printStackTrace ();
+	    	        } finally {
+	    	        }
+	    			break;
 	    		default:
 	    			System.out.println("Exiting....");
 	    	}
 	    	
-	    }while(choice < 4);
+	    }while(choice < 6);
 
 	}
 	
@@ -208,7 +226,9 @@ public class MightWorkClient {
 	                "1) Echo\n" +
 	                "2) File upload\n" +
 	                "3) File download\n" +
-	                "4) Exit\n" +
+	                "4) List files\n" +
+	                "5) Get JSON of file\n" +
+	                "6) Exit\n" +
 	                "Select: ");
 	}
 

@@ -13,14 +13,12 @@ public class GetJSONFileHandler implements GetJSONService.Iface {
 
 	@Override
 	public String getJSONFile(String fileName) throws TException {
-		
-		System.out.println("Searching for:" + fileName);
-		
-		THttpClient transport = new THttpClient("http://localhost:8890/getjsonfile");
+		THttpClient transport = new THttpClient("http://localhost:8810/getjsonfile");
 		TProtocol protocol = new TBinaryProtocol(transport);
-		GetJSONService.Client client = new GetJSONService.Client(protocol);
+		GetService.Client client = new GetService.Client(protocol);
 		
-		return client.getJSONFile(fileName);
+		return client.GetJSON(fileName);
 	}
+
 
 }
