@@ -6,9 +6,13 @@
   <artifactId>JSONParser</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  
-  <build>
+
+<build>
   <plugins>
+   <plugin>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-maven-plugin</artifactId>
+	</plugin>
     <plugin>
       <!-- Build an executable JAR -->
       <groupId>org.apache.maven.plugins</groupId>
