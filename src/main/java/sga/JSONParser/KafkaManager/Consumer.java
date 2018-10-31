@@ -13,6 +13,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import sga.JSONParser.Configs.OSConfigs;
 import sga.JSONParser.Services.InsertService;
 import sga.JSONParser.SpectraProcessor.SpectraProcessor;
 
@@ -33,7 +34,7 @@ public class Consumer {
     	String[] data = msg[9].toString().split("\"");
     	String[] filenameAndType = data[1].split("\\.");
     	System.out.println("*****file name*****"+filenameAndType[1]);
-    	String fi = "C:\\sharedDirectory\\" + data[1];
+    	String fi = OSConfigs.sharedDirectoryPath + data[1];
     	
     	pushJSON(processor.processFile(fi));
 	}
@@ -47,7 +48,7 @@ public class Consumer {
 	{
 		THttpClient transport;
 		try {
-			transport = new THttpClient("http://localhost:8810/insertservice");
+			transport = new THttpClient("sga_mongomanager_1:8810/insertservice");
 			TProtocol protocol = new TBinaryProtocol(transport);
 		    InsertService.Client client = new InsertService.Client(protocol);
 		    client.InsertJSON(jsonMetaData);
