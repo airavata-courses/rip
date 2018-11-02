@@ -24,6 +24,8 @@ ENV PATH=${PATH}:${KAFKA_HOME}/bin
 
 COPY download-kafka.sh start-kafka.sh broker-list.sh create-topics.sh versions.sh /tmp/
 
+EXPOSE 9092
+
 RUN apk add --no-cache bash curl jq docker \
  && mkdir /opt \
  && chmod a+x /tmp/*.sh \
