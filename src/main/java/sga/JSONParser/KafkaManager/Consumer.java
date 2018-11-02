@@ -34,8 +34,8 @@ public class Consumer {
     	String[] data = msg[9].toString().split("\"");
     	String[] filenameAndType = data[1].split("\\.");
     	System.out.println("*****file name*****"+filenameAndType[1]);
-    	String fi = OSConfigs.sharedDirectoryPath + data[1];
-    	
+    	String fi = OSConfigs.sharedDirectoryPath +"/" + data[1];
+    	System.out.println(fi);
     	pushJSON(processor.processFile(fi));
 	}
 	
@@ -48,7 +48,7 @@ public class Consumer {
 	{
 		THttpClient transport;
 		try {
-			transport = new THttpClient("sga_mongomanager_1:8810/insertservice");
+			transport = new THttpClient("http://mongomanager:8810/insertservice");
 			TProtocol protocol = new TBinaryProtocol(transport);
 		    InsertService.Client client = new InsertService.Client(protocol);
 		    client.InsertJSON(jsonMetaData);
