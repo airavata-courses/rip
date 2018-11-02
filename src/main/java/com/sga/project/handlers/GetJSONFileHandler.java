@@ -13,7 +13,7 @@ public class GetJSONFileHandler implements GetJSONService.Iface {
 
 	@Override
 	public String getJSONFile(String fileName) throws TException {
-		THttpClient transport = new THttpClient("http://localhost:8810/getjsonfile");
+		THttpClient transport = new THttpClient("http://mongomanager:8810/getjsonfile");
 		TProtocol protocol = new TBinaryProtocol(transport);
 		GetService.Client client = new GetService.Client(protocol);
 		

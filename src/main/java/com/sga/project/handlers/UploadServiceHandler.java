@@ -103,7 +103,9 @@ public class UploadServiceHandler implements UploadService.Iface{
 		else
 		{
 			source = new File(BASE_DIRECTORY+"/"+ctx.file.getName());
+			System.out.println(source.getAbsolutePath());
 	        dest = new File(SHARED_DIRECTORY+"/"+ctx.file.getName());
+			System.out.println(dest.getAbsolutePath());
 		}
 		
 	    InputStream is = null;
