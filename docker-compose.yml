@@ -1,0 +1,49 @@
+version: "3.1"
+
+services:
+   thriftserver:
+      build:
+         context: ./ThriftServer/rip
+      ports:
+         - 8888:8888
+      restart: always
+      volumes:
+         - /bin/sharedDirectory:/root/sharedDirectory
+
+   zookeeper:
+      build:
+         context : ./messageQueue/rip/zookeeper
+      ports:
+         - 2181:2181
+      restart: always
+
+   kafka:
+      build:
+         context: ./messageQueue/rip/kafka
+      ports:
+         - 9092:9092
+      restart: always
+      depends_on:
+         - zookeeper
+      environment:
+         KAFKA_ADVERTISED_HOST_NAME: 172.17.0.1
+         KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+         KAFKA_CREATE_TOPICS: "topic1:1:1"
+      volumes:
+         - /var/run/docker.sock:/var/run/docker.sock
+	mongomanager:
+      build:
+         context: ./MongoDBManager/rip
+      ports:
+         - 8810:8810
+      restart: always
+
+	jsonparser:
+	   build:
+         context: ./JSONParser/rip/
+      ports:
+         - 8890:8890
+      restart: always
+      volumes:
+         - /bin/sharedDirectory:/root/sharedDirectory
+
