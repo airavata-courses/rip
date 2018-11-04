@@ -5,7 +5,7 @@ pipeline {
 	stage('Confirming')
 	{
 		steps{
-			sh 'echo "status: OK"'
+			sh 'mvn clean install -Dmaven.test.skip=true'
 		}
 	   
 	}
