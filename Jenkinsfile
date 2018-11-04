@@ -29,6 +29,11 @@ pipeline {
                 build job: 'MongoManager'
             }
         }
+	    stage('Starting service') {
+            steps {
+                sh 'docker-compose up --build'
+            }
+        }
     }
 }
         
