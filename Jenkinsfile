@@ -5,7 +5,8 @@ pipeline {
     {
 	    stage('setting up required directories') {
             steps {
-                sh ''
+                sh 'chmod +x fileCreate.sh'
+		sh './fileCreate.sh'
             }
         }
     }
