@@ -9,11 +9,6 @@ pipeline {
 		sh './fileCreate.sh'
             }
         }
-	    stage('Stopping previous containers') {
-            steps {
-                sh 'docker-compose down'
-            }
-        }
 	    stage('Building Kafka queue') {
             steps {
                 build job: 'Kafka'
