@@ -39,7 +39,7 @@ services:
       restart: always
 
    jsonparser:
-	   build:
+      build:
          context: ../JSONParser/
       ports:
          - 8890:8890
