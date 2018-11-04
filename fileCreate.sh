@@ -3,4 +3,11 @@ if [ ! -e "/bin/sharedDirectory/" ]; then
     sudo mkdir "/bin/sharedDirectory/"
 fi
 
-mkdir sga
+if [ ! -e "/sga/" ]; then
+    echo "sga directory does not exist, creating a new sga directory."
+    sudo mkdir sga
+else
+    rm -rf sga
+fi
+
+
