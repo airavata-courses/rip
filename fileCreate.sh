@@ -5,7 +5,7 @@ fi
 
 if [ ! -e "/sga/" ]; then
     echo "sga directory does not exist, creating a new sga directory."
-    sudo mkdir sga
+    sudo mkdir "sga"
 else
     rm -rf sga
 fi
