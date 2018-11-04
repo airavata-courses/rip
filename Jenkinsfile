@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-	stage('Confirming')
+	stage('Building JSONParser')
 	{
 		steps{
-			sh 'echo "status: OK"'
+			sh 'mvn clean install -Dmaven.test.skip=true'
 		}
 	   
 	}
