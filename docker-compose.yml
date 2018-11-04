@@ -33,7 +33,7 @@ services:
          - /var/run/docker.sock:/var/run/docker.sock
    mongomanager:
       build:
-         context: ../MongoManager/r
+         context: ../MongoManager/
       ports:
          - 8810:8810
       restart: always
