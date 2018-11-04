@@ -3,7 +3,7 @@ version: "3.1"
 services:
    thriftserver:
       build:
-         context: ./ThriftServer/rip
+         context: ../ThriftServer/
       ports:
          - 8888:8888
       restart: always
@@ -12,14 +12,14 @@ services:
 
    zookeeper:
       build:
-         context : ./messageQueue/rip/zookeeper
+         context : ../Kafka/zookeeper
       ports:
          - 2181:2181
       restart: always
 
    kafka:
       build:
-         context: ./messageQueue/rip/kafka
+         context: ../Kafka/kafka
       ports:
          - 9092:9092
       restart: always
@@ -33,14 +33,14 @@ services:
          - /var/run/docker.sock:/var/run/docker.sock
 	mongomanager:
       build:
-         context: ./MongoDBManager/rip
+         context: ../MongoManager/r
       ports:
          - 8810:8810
       restart: always
 
 	jsonparser:
 	   build:
-         context: ./JSONParser/rip/
+         context: ../JSONParser/
       ports:
          - 8890:8890
       restart: always
