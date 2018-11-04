@@ -4,7 +4,7 @@ pipeline {
     stages {
 	stage('Confirming')
 	{
-		echo "status: OK"
+	   sh 'echo "status: OK"'
 	}
     }
 }
