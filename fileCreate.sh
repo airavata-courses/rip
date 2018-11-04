@@ -1,4 +1,8 @@
-if [ ! -f "/bin/sharedDirectory/" ]; then
+if [ ! -e "/bin/sharedDirectory/" ]; then
     echo "shared directory does not exist, creating a new shared directory."
-    mkdir "/bin/sharedDirectory/"
+    sudo mkdir "/bin/sharedDirectory/"
 fi
+
+
+
+
