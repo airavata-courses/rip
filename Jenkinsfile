@@ -9,11 +9,6 @@ pipeline {
 		sh './fileCreate.sh'
             }
         }
-	    stage('Building ThriftServer') {
-            steps {
-                build job: 'ThriftServerDocker'
-            }
-        }
     }
 }
         
