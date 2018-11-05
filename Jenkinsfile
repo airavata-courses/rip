@@ -29,10 +29,14 @@ pipeline {
                 build job: 'MongoManager'
             }
         }
-	    stage('Starting Servicecs') {
+	    stage('Stopping any old Services') {
             steps {
                 sh 'sudo docker-compose down'
-		sh 'sudo docker-compose up --build'
+            }
+	}
+	    stage('Starting Servicecs') {
+            steps {
+		sh 'sudo docker-compose up -d --build'
             }
         }
     }
