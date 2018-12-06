@@ -52,7 +52,17 @@ public class ThriftConfig {
         return srb;
 	}
 	
-	
+	@Bean
+    public ServletRegistrationBean thriftGetAllFilesServlet(TProtocolFactory protocolFactory, GetAllFilesHandler handler) {
+        DispatcherServlet dispatcherServlet = new DispatcherServlet();   
+        AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
+        applicationContext.register(GetAllFilesConfig.class);
+        dispatcherServlet.setApplicationContext(applicationContext);
+        TServlet tServlet = new TServlet(new GetAllFilesService.Processor<>(handler), protocolFactory);
+        ServletRegistrationBean srb = new ServletRegistrationBean(tServlet, "/getAllFiles");
+        srb.setName("GetAllFilesService");
+        return srb;
+	}
 	
 	
 }
