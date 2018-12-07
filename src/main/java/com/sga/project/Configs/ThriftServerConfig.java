@@ -75,4 +75,16 @@ public class ThriftServerConfig {
         srb.setName("getjsonfile");
         return srb;
 	}
+	
+	@Bean
+    public ServletRegistrationBean thriftGetAllFilesServlet(TProtocolFactory protocolFactory, GetAllFilesServiceHandler handler) {
+        DispatcherServlet dispatcherServlet = new DispatcherServlet();   
+        AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
+        applicationContext.register(GetAllFilesConfigs.class);
+        dispatcherServlet.setApplicationContext(applicationContext);
+        TServlet tServlet = new TServlet(new GetAllFilesService.Processor<>(handler), protocolFactory);
+        ServletRegistrationBean srb = new ServletRegistrationBean(tServlet, "/getallfiles");
+        srb.setName("getallfiles");
+        return srb;
+	}
 }

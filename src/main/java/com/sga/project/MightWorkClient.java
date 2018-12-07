@@ -21,7 +21,10 @@ import com.sga.project.transferables.TransferType;
 
 public class MightWorkClient {
 
+	static String ipAddress = "http://149.165.156.103";
 	public static void main(String[] args) throws AuthenticationException, TException, UnavailableException, IOException {
+		
+		
 	    
 	    Scanner scan = new Scanner(System.in);
 	    int choice = 0;
@@ -32,7 +35,7 @@ public class MightWorkClient {
 	    	switch(choice)
 	    	{
 	    		case 1:
-	    			THttpClient transport = new THttpClient("http://localhost:8888/echo");
+	    			THttpClient transport = new THttpClient(ipAddress+":8888/echo");
 	    		    
 	    		    TProtocol protocol = new TBinaryProtocol(transport);
 	    		    
@@ -74,17 +77,18 @@ public class MightWorkClient {
 	                }
 	    			break;
 	    		case 4:
-	    			List<String> files1 = getAvailableFileList();
-	    			for(String file: files1)
-	    				System.out.println(file);
-	    			break;
+	    			THttpClient t2 = new THttpClient("http://localhost:8888/getallfiles");	    		    
+	    		    TProtocol p = new TBinaryProtocol(t2);
+	    		    GetAllFilesService.Client client2 = new GetAllFilesService.Client(p);
+	    		    System.out.println(client2.getAllFiles());
+	    		    break;
 	    		case 5:
 	    			THttpClient transport1 = new THttpClient("http://localhost:8888/getjsonfile");
 	    		    TProtocol protocol1 = new TBinaryProtocol(transport1);
 	    		    try {
 	    	            GetJSONService.Client client1 = new GetJSONService.Client(protocol1);
-	    	            String reply1 = client1.getJSONFile("R4B");
-	    	            System.out.println(reply1);;
+	    	            String reply1 = client1.getJSONFile("R333B_film 1_exc_em630.csv--R3B_film 1_exc_em630.csv--");
+	    	            System.out.println(reply1);
 	    	        } catch (TException e) {
 	    	            e . printStackTrace ();
 	    	        } finally {
@@ -116,7 +120,7 @@ public class MightWorkClient {
             reqInfo.type = TransferType.REQUEST;
             reqInfo.fileName = fileName;
 
-            THttpClient transport = new THttpClient("http://localhost:8888/download");
+            THttpClient transport = new THttpClient(ipAddress+":8888/download");
     	    
     	    TProtocol protocol = new TBinaryProtocol(transport);
             DownloadService.Client client = new DownloadService.Client(protocol);
@@ -154,7 +158,7 @@ public class MightWorkClient {
 	 * */
 	private static List<String> getAvailableFileList() throws TTransportException {
 		// TODO Auto-generated method stub
-		THttpClient transport = new THttpClient("http://localhost:8888/download");
+		THttpClient transport = new THttpClient(ipAddress+":8888/download");
 	    
 	    TProtocol protocol = new TBinaryProtocol(transport);
 	    
@@ -176,7 +180,7 @@ public class MightWorkClient {
 	private static void upload(String path) throws IOException, TTransportException {
 		// TODO Auto-generated method stub
 		
-		THttpClient uploadTransport = new THttpClient("http://localhost:8888/upload");
+		THttpClient uploadTransport = new THttpClient(ipAddress+":8888/upload");
 	    
 	    TProtocol uploadProtocol = new TBinaryProtocol(uploadTransport);
 	    
