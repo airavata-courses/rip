@@ -28,7 +28,7 @@ import com.sga.project.transferables.TransferType;
 
 public class MightWorkClient {
 
-	static String ipAddress = "http://149.165.156.103";//"http://localhost";//"http://149.165.156.103";
+	static String ipAddress = "http://149.165.156.103";//"http://localhost";
 	public static void main(String[] args) throws AuthenticationException, TException, UnavailableException, IOException {
 		
 		
