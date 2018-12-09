@@ -27,7 +27,7 @@ public class GetJSONFileHandler implements GetJSONService.Iface {
 		
 		List<ElementCoordsPair> result = new ArrayList<ElementCoordsPair>();
 		
-		THttpClient transport = new THttpClient("http://149.165.156.103:8810/getjsonfile");
+		THttpClient transport = new THttpClient("http://mongomanager/getjsonfile");
 		TProtocol protocol = new TBinaryProtocol(transport);
 		GetService.Client client = new GetService.Client(protocol);
 		
