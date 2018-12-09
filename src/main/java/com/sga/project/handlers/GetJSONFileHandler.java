@@ -27,12 +27,11 @@ public class GetJSONFileHandler implements GetJSONService.Iface {
 		
 		List<ElementCoordsPair> result = new ArrayList<ElementCoordsPair>();
 		
-		THttpClient transport = new THttpClient("http://mongomanager/getjsonfile");
+		THttpClient transport = new THttpClient("http://149.165.156.103:8810/getjsonfile");
 		TProtocol protocol = new TBinaryProtocol(transport);
 		GetService.Client client = new GetService.Client(protocol);
 		
 		for(String s : GetFiles(tempList)) {
-			System.out.println(s+".csv");
 			List<Coordinate> coordList = new Gson().fromJson(client.GetJSON(s), new TypeToken<List<Coordinate>>(){}.getType());
 			result.add(new ElementCoordsPair(s, coordList));
 		}

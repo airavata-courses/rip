@@ -25,9 +25,10 @@ import com.sga.project.transferables.TransferInfo;
 import com.sga.project.transferables.TransferType;
 
 
+
 public class MightWorkClient {
 
-	static String ipAddress = "http://localhost";//"http://149.165.156.103";
+	static String ipAddress = "http://149.165.156.103";//"http://localhost";//"http://149.165.156.103";
 	public static void main(String[] args) throws AuthenticationException, TException, UnavailableException, IOException {
 		
 		
@@ -93,7 +94,7 @@ public class MightWorkClient {
 	    		    TProtocol protocol1 = new TBinaryProtocol(transport1);
 	    		    try {
 	    	            GetJSONService.Client client1 = new GetJSONService.Client(protocol1);
-	    	            String reply1 = client1.getJSONFile("R333B_film 1_exc_em630--R3B_film 2_exc_em6305395238970900266591--");
+	    	            String reply1 = client1.getJSONFile("R3B_film 2_exc_em630--");
 	    	            System.out.println(reply1);
 	    	        } catch (TException e) {
 	    	            e . printStackTrace ();
