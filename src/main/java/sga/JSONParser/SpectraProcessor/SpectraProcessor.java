@@ -50,7 +50,7 @@ public class SpectraProcessor{
                 coordinates.add(new Coordinate(Double.parseDouble(csvRecord.get(0)),Double.parseDouble(csvRecord.get(1))));
     		}
 			
-    		String ans = new Gson().toJson(new MetaData(parts[0],parts[1],parts[2],parts[3].substring(0, parts[3].length()-4),coordinates));
+    		String ans = new Gson().toJson(new MetaData(parts[0],parts[1],parts[2],parts[3].substring(0, parts[3].length()),coordinates));
     		System.out.println(ans);
 		return ans;
 	}
