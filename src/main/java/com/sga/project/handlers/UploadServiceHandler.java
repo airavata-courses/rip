@@ -55,7 +55,7 @@ public class UploadServiceHandler implements UploadService.Iface{
             String name = dot != -1 ? info.fileName.substring(0, info.fileName.length() - ext.length()) : info.fileName;
 
             context = new Context();
-            context.file = File.createTempFile(name, ext, BASE_DIRECTORY);
+            context.file = File.createTempFile(name+"_", ext, BASE_DIRECTORY);
             context.raf = new RandomAccessFile(context.file, "rw");
             context.length = info.length;
         } catch (IOException e) {

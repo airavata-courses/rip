@@ -15,13 +15,19 @@ import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.THttpClient;
 import org.apache.thrift.transport.TTransportException;
-import com.sga.project.services.*;
+
+import com.sga.project.services.DownloadService;
+import com.sga.project.services.EchoService;
+import com.sga.project.services.GetAllFilesService;
+import com.sga.project.services.GetJSONService;
+import com.sga.project.services.UploadService;
 import com.sga.project.transferables.TransferInfo;
 import com.sga.project.transferables.TransferType;
 
+
 public class MightWorkClient {
 
-	static String ipAddress = "http://149.165.156.103";
+	static String ipAddress = "http://localhost";//"http://149.165.156.103";
 	public static void main(String[] args) throws AuthenticationException, TException, UnavailableException, IOException {
 		
 		
@@ -77,17 +83,17 @@ public class MightWorkClient {
 	                }
 	    			break;
 	    		case 4:
-	    			THttpClient t2 = new THttpClient("http://localhost:8888/getallfiles");	    		    
+	    			THttpClient t2 = new THttpClient(ipAddress+":8888/getallfiles");	    		    
 	    		    TProtocol p = new TBinaryProtocol(t2);
 	    		    GetAllFilesService.Client client2 = new GetAllFilesService.Client(p);
 	    		    System.out.println(client2.getAllFiles());
 	    		    break;
 	    		case 5:
-	    			THttpClient transport1 = new THttpClient("http://localhost:8888/getjsonfile");
+	    			THttpClient transport1 = new THttpClient(ipAddress+":8888/getjsonfile");
 	    		    TProtocol protocol1 = new TBinaryProtocol(transport1);
 	    		    try {
 	    	            GetJSONService.Client client1 = new GetJSONService.Client(protocol1);
-	    	            String reply1 = client1.getJSONFile("R333B_film 1_exc_em630.csv--R3B_film 1_exc_em630.csv--");
+	    	            String reply1 = client1.getJSONFile("R333B_film 1_exc_em630--R3B_film 2_exc_em6305395238970900266591--");
 	    	            System.out.println(reply1);
 	    	        } catch (TException e) {
 	    	            e . printStackTrace ();
